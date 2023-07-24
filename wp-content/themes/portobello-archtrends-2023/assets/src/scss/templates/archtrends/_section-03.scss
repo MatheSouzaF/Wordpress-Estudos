@@ -1,0 +1,97 @@
+.section03 {
+    background: #E0E0E0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding: 0;
+        min-height: 80vh;
+        padding: 0 60px;
+    }
+
+    .logoSection03 {
+        position: absolute;
+        top: 9%;
+        right: 10%;
+
+        @media(min-width: 769px) {
+            top: -80px;
+            right: 10%;
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    .descriptionSection03 {
+        padding-top: 160px;
+        color: #4343AB;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+
+        @media (min-width: 769px) {
+            padding-top: 100px;
+            padding-right: 290px;
+            padding: 100px 290px 100px 100px;
+
+            font-size: 2.8vw;
+            line-height: 140%;
+            margin: 0;
+
+
+            span {
+                font-family: 'Helvetica Neue', sans-serif;
+
+                background: linear-gradient(to right,
+                        #4343AB 50%,
+                        rgba(67, 67, 171, 0.1) 50%);
+                background-size: 200% 100%;
+                background-position-x: 100%;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+
+        }
+
+        @media (max-height:768px) {
+            padding: 60px 0 120px;
+        }
+
+        @media (min-width: 1440px) {
+            max-width: calc(1440px + 160px);
+        }
+    }
+
+    .ticket {
+        .labelTicket {
+            color: #4343AB;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0.7px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 24px;
+                left: 0;
+                width: 191px;
+                height: 10px;
+                background-color: #EC008C;
+            }
+        }
+
+        @media (min-width: 769px) {
+            display: none;
+        }
+    }
+
+
+}

@@ -1,0 +1,69 @@
+.section02 {
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 520px;
+    position: relative;
+    background-size: cover;
+    background: #4343AB;
+
+    @media(min-width: 769px) {
+        max-height: inherit;
+    }
+
+    .video-wrapper {
+        display: none;
+        height: 100vh;
+        max-width: 1920px;
+        width: 100vw;
+        mix-blend-mode: overlay;
+
+        .video-container {
+            max-width: 1920px;
+            width: 100vw;
+            min-height: 110vh;
+            object-fit: cover;
+        }
+
+        @media (min-width:769px) {
+            display: block;
+        }
+    }
+
+    .imageMobile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (min-width:769px) {
+            display: none;
+        }
+    }
+
+    .logoSection02 {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+
+        @media (min-width:769px) {
+            height: 70vh;
+        }
+    }
+
+    .maskPink {
+        background: #EC008C;
+        height: 50px;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        mix-blend-mode: color;
+        max-width: 1280px;
+
+        @media (min-width: 1441px) {
+            max-width: 1440px;
+        }
+    }
+
+}
